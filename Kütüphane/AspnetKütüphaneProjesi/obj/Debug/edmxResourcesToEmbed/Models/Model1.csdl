@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="aspnetKütüphaneProjesiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBLADMİNBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adminkullanıcıadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLALINANKİTAPLAR">
+    <Key>
+      <PropertyRef Name="alınankitapid" />
+    </Key>
+    <Property Name="alınankitapid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="öğrenciadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tarih" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLÖĞRENCİBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="öğrenciid" />
+    </Key>
+    <Property Name="öğrenciid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="öğrenciadsoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="kullanıcıadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLTESLİMEDİLENKİTAPLAR">
+    <Key>
+      <PropertyRef Name="teslimid" />
+    </Key>
+    <Property Name="teslimid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="öğrenciadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="teslimtarihi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLYETKİLİBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="yetkiliid" />
+    </Key>
+    <Property Name="yetkiliid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adsoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="kullanıcıadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="aspnetKütüphaneProjesiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBLADMİNBİLGİLERİ" EntityType="Self.TBLADMİNBİLGİLERİ" />
+    <EntitySet Name="TBLALINANKİTAPLAR" EntityType="Self.TBLALINANKİTAPLAR" />
+    <EntitySet Name="TBLÖĞRENCİBİLGİLERİ" EntityType="Self.TBLÖĞRENCİBİLGİLERİ" />
+    <EntitySet Name="TBLTESLİMEDİLENKİTAPLAR" EntityType="Self.TBLTESLİMEDİLENKİTAPLAR" />
+    <EntitySet Name="TBLYETKİLİBİLGİLERİ" EntityType="Self.TBLYETKİLİBİLGİLERİ" />
+    <EntitySet Name="TBLKİTAPBİLGİLERİ" EntityType="aspnetKütüphaneProjesiModel.TBLKİTAPBİLGİLERİ" />
+  </EntityContainer>
+  <EntityType Name="TBLKİTAPBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapadı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="kategorisi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="yazarı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sayfasayısı" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

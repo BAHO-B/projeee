@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="aspnetKütüphaneProjesiModelStoreContainer" CdmEntityContainer="aspnetKütüphaneProjesiEntities">
+    <EntitySetMapping Name="TBLADMİNBİLGİLERİ">
+      <EntityTypeMapping TypeName="aspnetKütüphaneProjesiModel.TBLADMİNBİLGİLERİ">
+        <MappingFragment StoreEntitySet="TBLADMİNBİLGİLERİ">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adminkullanıcıadı" ColumnName="adminkullanıcıadı" />
+          <ScalarProperty Name="şifre" ColumnName="şifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLALINANKİTAPLAR">
+      <EntityTypeMapping TypeName="aspnetKütüphaneProjesiModel.TBLALINANKİTAPLAR">
+        <MappingFragment StoreEntitySet="TBLALINANKİTAPLAR">
+          <ScalarProperty Name="alınankitapid" ColumnName="alınankitapid" />
+          <ScalarProperty Name="kitapadı" ColumnName="kitapadı" />
+          <ScalarProperty Name="öğrenciadı" ColumnName="öğrenciadı" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLÖĞRENCİBİLGİLERİ">
+      <EntityTypeMapping TypeName="aspnetKütüphaneProjesiModel.TBLÖĞRENCİBİLGİLERİ">
+        <MappingFragment StoreEntitySet="TBLÖĞRENCİBİLGİLERİ">
+          <ScalarProperty Name="öğrenciid" ColumnName="öğrenciid" />
+          <ScalarProperty Name="öğrenciadsoyad" ColumnName="öğrenciadsoyad" />
+          <ScalarProperty Name="kullanıcıadı" ColumnName="kullanıcıadı" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="şifre" ColumnName="şifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTESLİMEDİLENKİTAPLAR">
+      <EntityTypeMapping TypeName="aspnetKütüphaneProjesiModel.TBLTESLİMEDİLENKİTAPLAR">
+        <MappingFragment StoreEntitySet="TBLTESLİMEDİLENKİTAPLAR">
+          <ScalarProperty Name="teslimid" ColumnName="teslimid" />
+          <ScalarProperty Name="kitapadı" ColumnName="kitapadı" />
+          <ScalarProperty Name="öğrenciadı" ColumnName="öğrenciadı" />
+          <ScalarProperty Name="teslimtarihi" ColumnName="teslimtarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYETKİLİBİLGİLERİ">
+      <EntityTypeMapping TypeName="aspnetKütüphaneProjesiModel.TBLYETKİLİBİLGİLERİ">
+        <MappingFragment StoreEntitySet="TBLYETKİLİBİLGİLERİ">
+          <ScalarProperty Name="yetkiliid" ColumnName="yetkiliid" />
+          <ScalarProperty Name="adsoyad" ColumnName="adsoyad" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="tc" ColumnName="tc" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="kullanıcıadı" ColumnName="kullanıcıadı" />
+          <ScalarProperty Name="şifre" ColumnName="şifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLKİTAPBİLGİLERİ">
+      <EntityTypeMapping TypeName="aspnetKütüphaneProjesiModel.TBLKİTAPBİLGİLERİ">
+        <MappingFragment StoreEntitySet="TBLKİTAPBİLGİLERİ">
+          <ScalarProperty Name="sayfasayısı" ColumnName="sayfasayısı" />
+          <ScalarProperty Name="yazarı" ColumnName="yazarı" />
+          <ScalarProperty Name="kategorisi" ColumnName="kategorisi" />
+          <ScalarProperty Name="kitapadı" ColumnName="kitapadı" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

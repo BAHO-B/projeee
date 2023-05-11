@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YetkiliPanel.master.cs" Inherits="AspnetKütüphaneProjesi.YetkiliPanel" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/yetkili.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/201/201571.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Yetkili Paneli</span>
+                    <span class="profession">Hoşgeldiniz</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul style="padding-left: 0rem;"
+                    class="menu-links">
+                    <li style="padding: 0rem 0rem;" class="nav-link">
+                        <a href="/Kitap/KitapListesi.aspx">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Kitap İşlemleri</span>
+                        </a>
+                    </li>
+
+                    <li style="padding: 0rem 0rem;" class="nav-link">
+                        <a href="/Kitap/KitapEkle.aspx">
+                            <i class='bx bx-book-add icon'></i>
+                            <span class="text nav-text">Kitap Ekleme</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li>
+                    <a href="/Giriş/GirişSayfası.aspx">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Çıkış</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </section>
+</body>
+</html>

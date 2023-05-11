@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ÜyePanel.master.cs" Inherits="AspnetKütüphaneProjesi.ÜyePanel1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kütüphane Projesi </title>
+    <link href="/css/uyepanel.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-1">
+            <a href="#" class="logo">TEPEBAŞI Kütüphanesi</a>
+        </div>
+        <div class="header-2">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href="/Üye/ÜyePanel.aspx">Anasayfa</a>
+                <a href="/Üye/ÜyeKitapListesi.aspx">Kitap Listesi</a>
+                <a href="/Giriş/GirişSayfası.aspx">Çıkış</a>
+            </nav>
+        </div>
+    </header>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

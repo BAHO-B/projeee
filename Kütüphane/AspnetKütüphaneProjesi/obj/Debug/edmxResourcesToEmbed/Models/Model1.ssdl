@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="aspnetKütüphaneProjesiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBLADMİNBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adminkullanıcıadı" Type="varchar" MaxLength="50" />
+    <Property Name="şifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLALINANKİTAPLAR">
+    <Key>
+      <PropertyRef Name="alınankitapid" />
+    </Key>
+    <Property Name="alınankitapid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kitapadı" Type="varchar" MaxLength="50" />
+    <Property Name="öğrenciadı" Type="varchar" MaxLength="50" />
+    <Property Name="tarih" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLKİTAPBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kitapadı" Type="varchar" MaxLength="50" />
+    <Property Name="kategorisi" Type="varchar" MaxLength="50" />
+    <Property Name="yazarı" Type="varchar" MaxLength="50" />
+    <Property Name="sayfasayısı" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLÖĞRENCİBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="öğrenciid" />
+    </Key>
+    <Property Name="öğrenciid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="öğrenciadsoyad" Type="varchar" MaxLength="50" />
+    <Property Name="kullanıcıadı" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="şifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLTESLİMEDİLENKİTAPLAR">
+    <Key>
+      <PropertyRef Name="teslimid" />
+    </Key>
+    <Property Name="teslimid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kitapadı" Type="varchar" MaxLength="50" />
+    <Property Name="öğrenciadı" Type="varchar" MaxLength="50" />
+    <Property Name="teslimtarihi" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLYETKİLİBİLGİLERİ">
+    <Key>
+      <PropertyRef Name="yetkiliid" />
+    </Key>
+    <Property Name="yetkiliid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adsoyad" Type="varchar" MaxLength="50" />
+    <Property Name="telefon" Type="varchar" MaxLength="11" />
+    <Property Name="tc" Type="varchar" MaxLength="11" />
+    <Property Name="adres" Type="varchar" MaxLength="75" />
+    <Property Name="kullanıcıadı" Type="varchar" MaxLength="50" />
+    <Property Name="şifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="aspnetKütüphaneProjesiModelStoreContainer">
+    <EntitySet Name="TBLADMİNBİLGİLERİ" EntityType="Self.TBLADMİNBİLGİLERİ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLALINANKİTAPLAR" EntityType="Self.TBLALINANKİTAPLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLKİTAPBİLGİLERİ" EntityType="Self.TBLKİTAPBİLGİLERİ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLÖĞRENCİBİLGİLERİ" EntityType="Self.TBLÖĞRENCİBİLGİLERİ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTESLİMEDİLENKİTAPLAR" EntityType="Self.TBLTESLİMEDİLENKİTAPLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLYETKİLİBİLGİLERİ" EntityType="Self.TBLYETKİLİBİLGİLERİ" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
